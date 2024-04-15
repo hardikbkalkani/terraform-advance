@@ -1,0 +1,16 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+*.tfplan
+terraform.tfstate
+terraform.tfstate.backup
+
+# .terraform directory
+/.terraform
+.terraform
+
+# Crash log files
+crash.log
+
+# Ignore files ending in ".tfvars", which may contain sensitive data
+*.tfvars
