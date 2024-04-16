@@ -12,5 +12,9 @@ variable "public_subnet_cidrs" {
 variable "instance_type" {
   description = "Instance type for the EC2 instance"
   type        = string
-  default     = "t2.micro"
+}
+
+variable "bucket_name" {
+  description = "S3 bucket name for dev env"
+  type = string
 }

@@ -27,3 +27,10 @@ module "ec2" {
   subnet_id         = module.vpc.public_subnet_ids[0]
   security_group_ids = [module.security_group.security_group_id]
 }
+
+module "s3" {
+  source = "../../modules/s3"
+
+  bucket_name = var.bucket_name
+  
+}
